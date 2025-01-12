@@ -24,7 +24,7 @@ Python utilise la notation anglaise, avec un point comme séparateur, et non une
 
 Python transforme un `int` en `float` lorsque c'est nécessaire.
 
-### Opérations
+### Opérateurs
 
 Python fournit tous les opérateurs de base, et gère les priorités.
 Il est possible de mettre des espaces avant/après les opérateurs.
@@ -40,6 +40,37 @@ Il est possible de mettre des espaces avant/après les opérateurs.
 >>> 3**2
 9
 ```
+
+### bool : Booléen
+
+`True`, `False` pour vrai, faux.
+
+Les `bool` ont leur propres opérateurs :
+
+```
+>>> True or False
+True
+>>> True and False
+False
+>>> not False
+True
+```
+
+Les comparateurs permettent de créer un booléen en comparant deux valeurs, on parle de *clauses*.
+
+```
+>>> 1 == 2
+False
+>>> 1 != 2
+True
+>>> 1 > 2
+False
+>>> 1 <= 2
+True
+```
+
+Pour distinguer le `=` qui sert à assigner une valeur d'un comparaison d'égalité, c'est un *double égal* `==` qui est utilisé.
+Par convention, l'opérateur pour "différent" est *point d'exclamation égal* `!=`.
 
 ## Collections
 
