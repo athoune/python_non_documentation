@@ -1,0 +1,6 @@
+[book]
+authors = ["Mathieu Lecarme"]
+language = "en"
+multilingual = false
+src = "src"
+title = "L'antidocumentation Python"
