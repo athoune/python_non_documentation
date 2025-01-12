@@ -1,0 +1,125 @@
+# Types
+
+Python utilise des valeurs de différents types.
+
+## Nombres
+
+### Entier : int
+
+```
+>>> 1+2
+3
+>>> 1-2
+-1
+```
+
+### Float : nombre réel
+
+```
+>>> 1/2
+0.5
+```
+
+Python utilise la notation anglaise, avec un point comme séparateur, et non une virgule.
+
+Python transforme un `int` en `float` lorsque c'est nécessaire.
+
+### Opérations
+
+Python fournit tous les opérateurs de base, et gère les priorités.
+Il est possible de mettre des espaces avant/après les opérateurs.
+
+```
+>>> 1+2*3
+7
+>>> (1+2)*3
+9
+>>> 3*7
+21
+>>> # ** : puissance
+>>> 3**2
+9
+```
+
+## Collections
+
+Les types simple ne représente qu'une seule valeur, il est possible de les regrouper dans des collections.
+
+Les collections ont une taille :
+
+```
+>>> len("oui")
+3
+```
+
+### str : Chaine de caractères
+
+Python utilise des guillemets `'` ou double guillemets `"`.
+Il est possible d'échapper un séparateur avec un `\`, si l'on a besoin de `'` et de `"`
+
+```
+>>> "J'aime les carottes"
+"j'aime les carottes"
+>>> >>> 'j\'aime les carottes'
+"j'aime les carottes"
+```
+
+Quelques opérations sont utilisables avec les `str` :
+
+```
+>>> 3 * "po"
+'popopo'
+>>> "Allo " + 'quoi'
+'Allo quoi'
+```
+
+### list : Liste
+
+Les listes sont ordonnées, acceptent le mélange de type et quelques opérateurs.
+Les éléments d'une liste sont accessibles par leur positions.
+Attention, en informatique, on aime bien compter à partir de 0, et non de 1.
+Dans l'exemple, l'élément 1 désigne le deuxième dans la liste.
+
+```
+>>> [1, "hop", 2.5]
+[1, 'hop', 2.5]
+>>> 3 * [1, 2]
+[1, 2, 1, 2, 1, 2]
+>>> ["il", "fait"] + ["beau"]
+['il', 'fait', 'beau']
+>>> ["pomme", "poire", "scoubidou"][1]
+'poire'
+```
+
+### tuple : Tuple
+
+Un tuple est une liste immuable (que l'on ne peut pas modifier).
+Il est essentielement par les fonctions quand elles renvoient plusieurs valeurs.
+
+### dict : dictionnaire
+
+Dans une liste, les éléments sont accessibles par leur rang, dans un dictionnaire, par une clef (de n'importe quel type).
+
+```
+>>> { "un": 1, "deux": 2}
+{'un': 1, 'deux': 2}
+>>> { "un": 1, "deux": 2}["deux"]
+2
+```
+
+## ハッキング Hakkingu
+
+Les chaines de caractères sont en UTF8, ce qui permet d'utiliser des smileys : `"J'adore 🐍"`.
+
+La syntaxe des listes a des souplesses pour favoriser la libilitée : il est possible d'avoir une parenthèse en trop à la fin de la liste, ou d'utiliser plusieurs lignes.
+
+```
+>>> [1,
+... 2,
+... ]
+[1, 2]
+```
+
+Une `str` est une `list` spécialisée dans les lettres.
+
+Des collections de collections sont possibles.
