@@ -1,0 +1,27 @@
+= Sommaire
+:reproducible:
+:author: Mathieu Lecarme
+:doctype: book
+:creator: {author}
+:producer: Asciidoctor
+:source-highlighter: pygment
+:icons: font
+:toc: left
+:imagesoutdir: images
+:imagesdir: images
+:chapter-label: Chapitre
+:toc-title: Sommaire
+
+Vous êtes jeune (au moins dans votre tête), pressé, et vous avait envie/besoin de coder en Python.
+
+
+include::python.adoc[]
+include::type.adoc[]
+include::variable.adoc[]
+include::controle.adoc[]
+include::fonction.adoc[]
+include::module.adoc[]
+include::stdlib.adoc[leveloffset=1]
+include::pipy.adoc[leveloffset=1]
+include::venv.adoc[]
+include::introspection.adoc[]
