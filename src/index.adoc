@@ -11,7 +11,10 @@
 :chapter-label: Chapitre
 :toc-title: Sommaire
 
-Vous êtes jeune (au moins dans votre tête), pressé, et vous avait envie/besoin de coder en Python.
+[verse,Lao Tseu, Citation d'une discussion sur IRC]
+La vie est courte
+Les livres ont trop de papiers
+Code ici et maintenant.
 
 [TIP]
 .Licence
