@@ -3,7 +3,7 @@
 :doctype: book
 :creator: {author}
 :producer: Asciidoctor
-:source-highlighter: pygment
+:source-highlighter: rouge
 :icons: font
 :toc: left
 :toclevels: 4
@@ -11,6 +11,9 @@
 :imagesdir: images
 :chapter-label: Chapitre
 :toc-title: Sommaire
+:page:
+    size: A5
+    hyphens: true
 
 [verse,Lao Tseu, Citation d'une discussion sur IRC]
 La vie est courte
