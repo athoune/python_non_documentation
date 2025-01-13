@@ -65,9 +65,9 @@ On va donc itérer jusqu'à ce qu'une clause soit vraie.
 .ハッキング Hakkingu
 --
 
-Avec `if` et `else` il existe `elif` contraction de `else if`.
+En plus de `if` et `else` il y a `elif` contraction de `else if`.
 
-Avec `break`, il est possible d'interrompre une boucle `for`
+`break` interromps une boucle `for`.
 
 ```
 >>> for i in range(3000):
@@ -80,5 +80,5 @@ Avec `break`, il est possible d'interrompre une boucle `for`
 2
 ```
 
-Il est possible de passer à l'itération suivante d'une boucle `for` avec `continue`.
+`continue` fait passer à l'itération suivante dans une boucle `for`.
 --
