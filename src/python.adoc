@@ -6,22 +6,21 @@ Il fait maintenant partie de l'enseignement des mathématiques en France.
 
 Il est utilisé dans le calcul scientifique, l'intelligence artificielle, le web, et beaucoup d'autres choses.
 
-=== Commande interactive
+=== Interpréteur interactif
 
-Édition interactive, avec souvent de la *complétion* (suggestion de la fin du mot que l'on est en train de taper), et la possibilité de remonter l'historique pour reprendre une ligne que l'on pourra modifier.
+L'interpréteur interactif permet de taper des commandes Python, une à une et d'afficher le résultat (et les erreurs quand on se trompe).
+Il est possible de remonter dans l'historique, pour reprendre une ligne précédante, sans avoir à tout retaper.
 
-La commande `python` lance un éditeur interactif.
-
-L'éditeur interactif par défaut de Python est aussi disponible sur Internet sans avoir besoin d'installer quoi que ce soit : [Pyodide interactif](https://pyodide.org/en/stable/console.html).
+L'interpréteur interactif de Python est disponible sur Internet sans avoir besoin d'installer quoi que ce soit : link:https://pyodide.org/en/stable/console.html[Pyodide interactif].
 
 === Interpréteur
 
-L'éditeur interactif est pratique pour bricoler du Python, tester, casser, recommencer.
+L'interpréteur Python va lire des fichiers contenant du code Python.
 
-Linux et OSX fournissent Python par défaut, sous le nom de `python3`, sur Windows, il faudra l'installer.
+Ces fichiers seront édités avec un éditeur de texte.
 
-Il existe des sites web fournissant un éditeur de texte combiné avec un interpréteur, pour travailler proprement, sans rien installer.
-[MyCompiler](https://www.mycompiler.io/fr/new/python) est l'un d'eux.
+Des éditeurs en ligne, combinant un éditeur de texte et un interpréteur, permettent d'éditer du code, confortablement, sans rien devoir installer.
+link:https://www.mycompiler.io/fr/new/python[MyCompiler] est l'un d'eux.
 
 [TIP]
 .ハッキング Hakkingu
@@ -29,7 +28,12 @@ Il existe des sites web fournissant un éditeur de texte combiné avec un interp
 
 Python est un langage *interprété*, *faiblement typé*.
 
-Il existe des commandes interactives plus pratiques que celles par défaut, comme [iPython](https://ipython.org/).
+Python a un link:https://docs.python.org/fr/3.13/tutorial/interpreter.html[tutorial officiel].
+
+La plupart des interpréteurs intéractifs fournissent de la complétion.
+La touche `->|` propose de compléter le début de mot que l'on a tapé.
+
+Il existe des interpréteurs interactifs plus pratiques que celui par défaut, comme link:https://ipython.org/[iPython].
 
 Pyodide, qui permet de lancer du Python sur Internet, tourne dans le navigateur web, avec *web assembly*, sans solliciter le serveur web.
 

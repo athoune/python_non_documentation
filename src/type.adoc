@@ -4,7 +4,7 @@ Python utilise des valeurs de différents types.
 
 === Nombres
 
-==== Entier : int
+==== int : Entier
 
 ```
 >>> 1+2
@@ -13,7 +13,7 @@ Python utilise des valeurs de différents types.
 -1
 ```
 
-==== Float : nombre réel
+==== float : Nombre réel
 
 ```
 >>> 1/2
@@ -27,7 +27,7 @@ Python transforme un `int` en `float` lorsque c'est nécessaire.
 ==== Opérateurs
 
 Python fournit tous les opérateurs de base et gère les priorités.
-Il est possible de mettre des espaces avant/après les opérateurs.
+Il est possible de mettre plusieurs espaces avant/après les opérateurs.
 
 ```
 >>> 1+2*3
@@ -43,7 +43,7 @@ Il est possible de mettre des espaces avant/après les opérateurs.
 
 ==== bool : Booléen
 
-`True`, `False` pour vrai, faux.
+`True` pour vrai, `False` pour faux.
 
 Les `bool` ont leurs propres opérateurs :
 
@@ -56,7 +56,7 @@ False
 True
 ```
 
-Les comparateurs permettent de créer un booléen en comparant deux valeurs, on parle de *clauses*.
+Les comparateurs permettent de créer un booléen comparant deux valeurs : une *clauses*.
 
 ```
 >>> 1 == 2
@@ -69,12 +69,12 @@ False
 True
 ```
 
-Pour distinguer le `=` qui sert à assigner une valeur d'une comparaison d'égalité, c'est un *double égal* `==` qui est utilisé.
+Pour distinguer le `=` qui sert à assigner une valeur, une comparaison d'égalité va utiliser le *double égal* `==`.
 Par convention, l'opérateur pour "différent" est *point d'exclamation égal* `!=`.
 
 === Collections
 
-Les types simples ne représentent qu'une seule valeur, il est possible de les regrouper dans des collections.
+Les collections permettent de regrouper des valeurs.
 
 Les collections ont une taille :
 
@@ -85,8 +85,8 @@ Les collections ont une taille :
 
 ==== str : Chaine de caractères
 
-Python utilise des guillemets `'` ou double guillemets `"`.
-Il est possible d'échapper un séparateur avec un `\`, si l'on a besoin de `'` et de `"`
+Une `str` utilise comme séparateur des guillemets simples `'` ou doubles `"`.
+Il est possible d'échapper un séparateur avec un `\`, si l'on utilise des `'` et des `"`
 
 ```
 >>> "J'aime les carottes"
@@ -106,7 +106,7 @@ Quelques opérations sont utilisables avec les `str` :
 
 ==== list : Liste
 
-Les listes sont ordonnées, acceptent le mélange de types et quelques opérateurs.
+Une `list` est ordonnée, accepte le mélange de types et quelques opérateurs.
 Les éléments d'une liste sont accessibles par leurs positions.
 Attention, en informatique, on aime bien compter à partir de 0, et non de 1.
 Dans l'exemple, l'élément 1 désigne le deuxième dans la liste.
@@ -124,8 +124,8 @@ Dans l'exemple, l'élément 1 désigne le deuxième dans la liste.
 
 ==== tuple : Tuple
 
-Un tuple est une liste immuable (que l'on ne peut pas modifier).
-Il est essentiellement utilisé par les fonctions quand elles renvoient plusieurs valeurs.
+Un `tuple` est une liste immuable (que l'on ne peut pas modifier).
+Les tuples sont essentiellement utilisés par les fonctions quand elles renvoient plusieurs valeurs.
 
 ==== dict : dictionnaire
 
@@ -142,9 +142,9 @@ Dans une liste, les éléments sont accessibles par leur rang, dans un dictionna
 .ハッキング Hakkingu
 --
 
-Les chaines de caractères sont en UTF8, ce qui permet d'utiliser des smileys : `"J'adore 🐍"`.
+Les `str` utilisent UTF8, ce qui permet l'utilisation des smileys : `"J'adore 🐍"`.
 
-La syntaxe des listes a des souplesses pour favoriser la lisibilité : il est possible d'avoir une parenthèse en trop à la fin de la liste ou d'utiliser plusieurs lignes.
+Les listes disposent d'une syntaxe plus souple pour favoriser la lisibilité : il est possible d'utiliser plusieurs lignes etd'avoir une virgule en trop à la fin de la liste (pour faciliter le copier/coller).
 
 ```
 >>> [1,
