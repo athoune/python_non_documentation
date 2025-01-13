@@ -1,5 +1,4 @@
-= Sommaire
-:reproducible:
+= Une non-documentation pour Python
 :author: Mathieu Lecarme
 :doctype: book
 :creator: {author}
