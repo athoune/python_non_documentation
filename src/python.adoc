@@ -1,22 +1,22 @@
 == Python
 
-Python est un *langage de programation*.
+Python est un *langage de programmation*.
 
 Il fait maintenant partie de l'enseignement des mathématiques en France.
 
-Il est utilisé dans le calcul scientifique, l'inteligence artificiel, le web, et beaucoup d'autres choses.
+Il est utilisé dans le calcul scientifique, l'intelligence artificielle, le web, et beaucoup d'autres choses.
 
-=== Commande intéractive
+=== Commande interactive
 
 Édition interactive, avec souvent de la *complétion* (suggestion de la fin du mot que l'on est en train de taper), et la possibilité de remonter l'historique pour reprendre une ligne que l'on pourra modifier.
 
 La commande `python` lance un éditeur interactif.
 
-L'éditeur intéractif par défaut de python est aussi disponible sur Internet sans voir besoin d'installer quoi que ce soit : [Pyodide intéractif](https://pyodide.org/en/stable/console.html).
+L'éditeur interactif par défaut de Python est aussi disponible sur Internet sans avoir besoin d'installer quoi que ce soit : [Pyodide interactif](https://pyodide.org/en/stable/console.html).
 
 === Interpréteur
 
-L'éditeur interactif est pratique pour bricoler du python, test, casser, recommencer.
+L'éditeur interactif est pratique pour bricoler du Python, tester, casser, recommencer.
 
 Linux et OSX fournissent Python par défaut, sous le nom de `python3`, sur Windows, il faudra l'installer.
 
@@ -27,10 +27,10 @@ Il existe des sites web fournissant un éditeur de texte combiné avec un interp
 .ハッキング Hakkingu
 --
 
-Python est un langage *interprété*, *faibelement typé*.
+Python est un langage *interprété*, *faiblement typé*.
 
-Il existe des commandes intéractives plus pratique que celle par défaut, comme [iPython](https://ipython.org/).
+Il existe des commandes interactives plus pratiques que celles par défaut, comme [iPython](https://ipython.org/).
 
-Pyodide, qui permet de lancer du Python sur Internet tourne dans le navigateur web, avec *web assembly*, sans solliciter le serveur web.
+Pyodide, qui permet de lancer du Python sur Internet, tourne dans le navigateur web, avec *web assembly*, sans solliciter le serveur web.
 
 --

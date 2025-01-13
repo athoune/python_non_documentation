@@ -20,13 +20,13 @@ Python utilise des valeurs de différents types.
 0.5
 ```
 
-Python utilise la notation anglaise, avec un point comme séparateur, et non une virgule.
+Python utilise la notation anglaise, avec un point comme séparateur et non une virgule.
 
 Python transforme un `int` en `float` lorsque c'est nécessaire.
 
 ==== Opérateurs
 
-Python fournit tous les opérateurs de base, et gère les priorités.
+Python fournit tous les opérateurs de base et gère les priorités.
 Il est possible de mettre des espaces avant/après les opérateurs.
 
 ```
@@ -45,7 +45,7 @@ Il est possible de mettre des espaces avant/après les opérateurs.
 
 `True`, `False` pour vrai, faux.
 
-Les `bool` ont leur propres opérateurs :
+Les `bool` ont leurs propres opérateurs :
 
 ```
 >>> True or False
@@ -69,12 +69,12 @@ False
 True
 ```
 
-Pour distinguer le `=` qui sert à assigner une valeur d'un comparaison d'égalité, c'est un *double égal* `==` qui est utilisé.
+Pour distinguer le `=` qui sert à assigner une valeur d'une comparaison d'égalité, c'est un *double égal* `==` qui est utilisé.
 Par convention, l'opérateur pour "différent" est *point d'exclamation égal* `!=`.
 
 === Collections
 
-Les types simple ne représente qu'une seule valeur, il est possible de les regrouper dans des collections.
+Les types simples ne représentent qu'une seule valeur, il est possible de les regrouper dans des collections.
 
 Les collections ont une taille :
 
@@ -106,8 +106,8 @@ Quelques opérations sont utilisables avec les `str` :
 
 ==== list : Liste
 
-Les listes sont ordonnées, acceptent le mélange de type et quelques opérateurs.
-Les éléments d'une liste sont accessibles par leur positions.
+Les listes sont ordonnées, acceptent le mélange de types et quelques opérateurs.
+Les éléments d'une liste sont accessibles par leurs positions.
 Attention, en informatique, on aime bien compter à partir de 0, et non de 1.
 Dans l'exemple, l'élément 1 désigne le deuxième dans la liste.
 
@@ -125,7 +125,7 @@ Dans l'exemple, l'élément 1 désigne le deuxième dans la liste.
 ==== tuple : Tuple
 
 Un tuple est une liste immuable (que l'on ne peut pas modifier).
-Il est essentielement par les fonctions quand elles renvoient plusieurs valeurs.
+Il est essentiellement utilisé par les fonctions quand elles renvoient plusieurs valeurs.
 
 ==== dict : dictionnaire
 
@@ -144,7 +144,7 @@ Dans une liste, les éléments sont accessibles par leur rang, dans un dictionna
 
 Les chaines de caractères sont en UTF8, ce qui permet d'utiliser des smileys : `"J'adore 🐍"`.
 
-La syntaxe des listes a des souplesses pour favoriser la libilitée : il est possible d'avoir une parenthèse en trop à la fin de la liste, ou d'utiliser plusieurs lignes.
+La syntaxe des listes a des souplesses pour favoriser la lisibilité : il est possible d'avoir une parenthèse en trop à la fin de la liste ou d'utiliser plusieurs lignes.
 
 ```
 >>> [1,

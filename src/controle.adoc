@@ -1,6 +1,6 @@
-== Controle de flot
+== Contrôle de flot
 
-Un programme peut ne pas se contenter d'une éxécution squentielle (une suite d'opérations).
+Un programme peut ne pas se contenter d'une exécution séquentielle (une suite d'opérations).
 
 Python a la particularité d'utiliser des indentations pour définir les blocs.
 Par convention, l'indentation est de quatre espaces. Dans les éditeurs de texte qui reconnaissent Python, une tabulation (la touche "->|" tout à gauche) va créer quatre espaces.
@@ -50,7 +50,7 @@ c
 === while : Tant que
 
 Parfois, on ne sait combien de fois on va boucler.
-On va donc itérer jusqu'à ce qu'une clause soit vrai.
+On va donc itérer jusqu'à ce qu'une clause soit vraie.
 
 ```
 >>> a = 0
