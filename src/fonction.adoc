@@ -1,1 +1,22 @@
 == Fonctions
+
+Une fonction regroupe un bloc de codes qui pourra être appelée dans une autre partie du code.
+
+Une fonction a une entrée (des `arguments`) et une sortie (le `return`).
+
+Python fournit des link:https://docs.python.org/fr/3.13/library/functions.html[fonctions natives].
+
+```
+>>> # abs: valeur absolue
+>>> abs(-2)
+2
+```
+
+Python est un langage orienté objet, les valeurs sont des objets.
+Les objets ont des `function` que l'on appelle `method`.
+
+```
+>>> # upper: passage en majuscule d'une chaine de caractères.
+>>> "bob".upper()
+'BOB'
+```
