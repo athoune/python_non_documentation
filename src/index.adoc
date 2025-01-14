@@ -16,6 +16,7 @@
 :media: prepress
 #:front-cover-image: image:gros-pied.png[Front Cover,1200,1200]
 :favicon: ./image/pied.png
+:imagesdir: ../output/image
 
 == Préambule
 

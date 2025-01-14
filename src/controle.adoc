@@ -5,7 +5,9 @@ Un programme peut ne pas se contenter d'une exécution séquentielle (une suite 
 Python a la particularité d'utiliser des indentations pour définir les blocs.
 Par convention, l'indentation est de quatre espaces. Dans les éditeurs de texte qui reconnaissent Python, une tabulation (la touche "->|" tout à gauche) va créer quatre espaces.
 
-=== if/else : Si, sinon
+=== if : Si
+
+image::if.svg[Static,100,100,float="right"]
 
 [source,python]
 ----
@@ -13,6 +15,10 @@ a = True
 if a:
     print("yeaaah")
 ----
+
+=== if/else : Si, sinon
+
+image::ifelse.svg[Static,100,100,float="right"]
 
 [source,python]
 ----
@@ -26,6 +32,8 @@ else:
 === for : Pour
 
 Une boucle for va utiliser un *itérateur*, qui pourra être une *collection*, ou plus simplement la fonction `range`.
+
+image::for-while.svg[Static,100,100,float="right"]
 
 ```
 >>> for i in range(3):
