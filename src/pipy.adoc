@@ -1,1 +1,29 @@
-== Bibliothèques tierses
+== Bibliothèques tierces
+
+Une multitude de modules sont disponibles sur Internet, un des bienfaits de l'open source.
+
+Le site link:https://pypi.org/[PyPi] est le portail officiel des modules Python.
+
+
+=== Pip
+
+La commande `pip` permet d'installer des modules.
+
+[source,bash]
+----
+pip install requests
+----
+
+
+[TIP]
+.ハッキング Hakkingu
+--
+
+Les interpréteurs Python en ligne ne disposent pas de tous les modules et les installent de manières différentes.
+
+Utiliser `pip` en dehors d'un <<_environnement_virtuel,environnement virtuel>> est fortement déconseillé, les souffrances à court terme seront terribles.
+
+Un module peut "tirer" d'autres modules, qui seront aussi installés par `pip`.
+
+Les 600 000 modules disponibles sur PyPi ne sont pas tous de la même qualité.
+--

@@ -1,1 +1,36 @@
-== Environement virtuel
+== Environnement virtuel
+
+Chaque projet est différent et nécessite des modules (dans des versions spécifiques) différents.
+
+
+=== venv : Virtual Environment
+
+La bibliothèque standard Python dispose du module `venv`.
+
+==== Création
+
+Dans le terminal, dans le dossier source :
+
+```
+python3 -m venv .venv
+```
+
+==== Activation
+
+Même terminal, même dossier.
+
+```
+source .venv/bin/activate
+```
+
+L'environnement virtuel doit être créé une fois, et activé à chaque session (à chaque fois que l'on ferme la fenêtre du terminal).
+
+[TIP]
+.ハッキング Hakkingu
+--
+
+Différentes personnes doivent pouvoir travailler sur un même projet, dans un environement virtuel déterministe.
+
+Les éditeurs de code gèrent les environnements virtuels.
+
+--

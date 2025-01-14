@@ -157,4 +157,6 @@ Une `str` est une `list` spécialisée dans les lettres.
 
 Des collections de collections sont possibles.
 
+Bien plus de link:https://docs.python.org/fr/3.13/library/stdtypes.html[types Python existent].
+
 --

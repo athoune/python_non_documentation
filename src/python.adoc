@@ -37,4 +37,6 @@ Il existe des interpréteurs interactifs plus pratiques que celui par défaut, c
 
 Pyodide, qui permet de lancer du Python sur Internet, tourne dans le navigateur web, avec *web assembly*, sans solliciter le serveur web.
 
+Le nom Python ne vient pas du serpent, mais des link:https://fr.wikipedia.org/wiki/Monty_Python[Monty Python], une célèbre troupe d'humoristes anglais.
+
 --

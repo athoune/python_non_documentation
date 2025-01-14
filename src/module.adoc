@@ -1,1 +1,38 @@
 == Modules
+
+Les modules permettent de regrouper des fonctions, des variables.
+
+Le nom du module comme préfixe évite les collisions de noms (différents modules peuvent avoir des éléments avec le même nom).
+
+```
+>>> import math
+>>> math.pi
+3.141592653589793
+>>> # Python utilise des radians en trigonométrie
+>>> math.sin(math.pi / 2)
+1.0
+```
+
+Des éléments spécifiques d'un module peuvent être importés et utilisés sans préfixe.
+
+```
+>>> from math import pi, sin
+>>> sin(pi / 2)
+1.0
+```
+
+Tous les éléments d'un module peuvent être importés d'un coup.
+
+```
+>>> from math import *
+>>> asin(1) / pi
+0.5
+```
+
+[TIP]
+.ハッキング Hakkingu
+--
+
+Il est possible de créer des modules et de les partager.
+
+--

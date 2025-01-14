@@ -20,3 +20,15 @@ Les objets ont des `function` que l'on appelle `method`.
 >>> "bob".upper()
 'BOB'
 ```
+
+=== Écrire une fonction
+
+Le bloc définissant une fonction est indenté (chaque ligne commence par une tabulation).
+
+[source,python]
+----
+def hello(name):
+    return "Hello {}".format(name)
+
+print(hello("World"))
+----
