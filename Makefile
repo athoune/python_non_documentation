@@ -5,6 +5,8 @@ html:
 	   --verbose \
 	   --doctype book \
 	   src/index.adoc
+	mkdir -p output/image
+	cp image/*.png output/image/
 
 all: html book epub
 
