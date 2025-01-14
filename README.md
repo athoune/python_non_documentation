@@ -2,9 +2,9 @@
 
 Documentation pour apprendre Python sans lire la documentation.
 
-## Créer le livre
+## Mouliner la documentation
 
-*Docker* permet de récupérer l'outil sans se casser la binette, que ce soit sur Linux ou Mac.
+*Docker* permet de récupérer l'outil `asciidoctor` sans se casser la binette, que ce soit sur Linux ou Mac.
 
 ### Installation
 
@@ -21,7 +21,13 @@ make
 `make pdf`, `make book`, `make epub` sont aussi disponible.
 `make all` regroupe tous les formats de sortie.
 
-Les livres se trouvent dans `output/index.html`
+Les livres se trouvent dans `output/`.
+
+Pour la version web et book, il faut disposer des outils suivant:
+
+ * pdfcpu
+ * pngcrush
+
 
 ## Licence
 
