@@ -6,7 +6,7 @@ html:
 	   --doctype book \
 	   src/index.adoc
 
-all: html pdf epub
+all: html book epub
 
 pdf:
 	docker run -it -u $(id -u):$(id -g) -v `pwd`:/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf \
@@ -14,6 +14,10 @@ pdf:
 	   --verbose \
 	   --doctype book \
 	   src/index.adoc
+
+book: pdf
+	# https://github.com/pdfcpu/pdfcpu
+	pdfcpu booklet -- output/book.pdf 4 output/index.pdf
 
 epub:
 	docker run -it -u $(id -u):$(id -g) -v `pwd`:/documents/ asciidoctor/docker-asciidoctor asciidoctor-epub3 \

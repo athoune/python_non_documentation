@@ -11,8 +11,9 @@
 :imagesdir: images
 :chapter-label: Chapitre
 :toc-title: Sommaire
-:pdf-page-size: A5
+:pdf-page-size: A4
 :pdf-hyphens: true
+:media: prepress
 
 == Préambule
 
