@@ -1,0 +1,14 @@
+---
+extends: default
+hyphens: true
+page:
+  format: A4
+title-page:
+  #background-image: ../images/gros-pied.png
+  title:
+    font-color: "#000000"
+    font-size: 24
+    font-style: bold
+  logo:
+    align: center
+    image: image:../../src/images/gros-pied.png[pdfwidth=50%]

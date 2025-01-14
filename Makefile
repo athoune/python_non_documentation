@@ -6,12 +6,15 @@ html:
 	   --doctype book \
 	   src/index.adoc
 	mkdir -p output/image
-	pngcrush -d output/image image/*.png
+	pngcrush -d output/image src/images/*.png
 
 all: html book epub
 
 pdf:
 	docker run -it -u $(id -u):$(id -g) -v `pwd`:/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf \
+	   -a pdf-theme=pied \
+	   -a pdf-themesdir=resources/themes \
+	   -a pdf-fontsdir=resources/fonts \
 	   --destination-dir /documents/output \
 	   --verbose \
 	   --doctype book \
