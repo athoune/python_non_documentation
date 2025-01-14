@@ -19,7 +19,14 @@
 [verse,Lao Tseu, Citation d'une discussion sur IRC]
 La vie est courte
 Les livres ont trop de papiers
-Code ici et maintenant.
+Code ici et maintenant!
+
+Ce fascicule devrait permettre aux personnes trop pressés, trop entousiastes, de faire leur premiers pas de développeurs Python, tout de suite, les mains dans le cambouis.
+
+Les pas suivant se feront en lisant de la vraie documentation, personne ne peut y couper.
+
+Dans chaque chapitre, la section *ハッキング Hakkingu* donne des astuces pour faire le malin et attiser la curiosité.
+
 
 [TIP]
 .Licence
