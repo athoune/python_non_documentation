@@ -30,6 +30,8 @@ Python est un langage *interprété*, *faiblement typé*.
 
 Python a un link:https://docs.python.org/fr/3.13/tutorial/interpreter.html[tutorial officiel].
 
+La link:https://www.numworks.com/fr/simulateur/[calcualtrice Numworks fournit un simulateur en ligne]. L'interpréteur intéractif est nommé "Console d'exécution".
+
 La plupart des interpréteurs intéractifs fournissent de la complétion.
 La touche `->|` propose de compléter le début de mot que l'on a tapé.
 

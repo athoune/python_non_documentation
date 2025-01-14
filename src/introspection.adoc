@@ -46,3 +46,11 @@ Dans un premier temps, il faut se concentrer sur les autres.
 <class 'float'>
 >>>
 ```
+
+[TIP]
+.ハッキング Hakkingu
+--
+
+La fonction `help` n'existe malheureusement pas sur le Python de Numworks.
+
+--
