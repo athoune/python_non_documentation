@@ -28,3 +28,6 @@ epub:
 
 pull:
 	docker pull asciidoctor/docker-asciidoctor
+
+publish:
+	rsync -avz --delete-after output/* $(DEST)
