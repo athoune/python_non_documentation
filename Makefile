@@ -6,7 +6,7 @@ html:
 	   --doctype book \
 	   src/index.adoc
 	mkdir -p output/image
-	cp image/*.png output/image/
+	pngcrush -d output/image image/*.png
 
 all: html book epub
 
