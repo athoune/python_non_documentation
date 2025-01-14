@@ -11,9 +11,10 @@
 :imagesdir: images
 :chapter-label: Chapitre
 :toc-title: Sommaire
-:page:
-    size: A5
-    hyphens: true
+:pdf-page-size: A5
+:pdf-hyphens: true
+
+== Préambule
 
 [verse,Lao Tseu, Citation d'une discussion sur IRC]
 La vie est courte
