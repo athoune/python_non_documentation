@@ -1,8 +1,10 @@
 # Une non-documentation pour Python.
 
+Documentation pour apprendre Python sans lire la documentation.
+
 ## Créer le livre
 
-*Docker* permet de récupérer l'outil, sans se casser la binette, que ce soit sur Linux ou Mac.
+*Docker* permet de récupérer l'outil sans se casser la binette, que ce soit sur Linux ou Mac.
 
 ### Installation
 
@@ -13,10 +15,13 @@ make pull
 ### Moulinage
 
 ```bash
-make pull
+make
 ```
 
-La documentation se trouve dans `output/index.html`
+`make pdf`, `make book`, `make epub` sont aussi disponible.
+`make all` regroupe tous les formats de sortie.
+
+Les livres se trouvent dans `output/index.html`
 
 ## Licence
 
