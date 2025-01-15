@@ -16,6 +16,7 @@ if a:
     print("yeaaah")
 ----
 
+
 === if/else : Si, sinon
 
 image::ifelse.svg[Static,100,100,float="right"]
@@ -59,6 +60,8 @@ c
 
 Parfois, on ne sait combien de fois on va boucler.
 On va donc itérer jusqu'à ce qu'une clause soit vraie.
+
+image::for-while.svg[Static,100,100,float="right"]
 
 ```
 >>> a = 0
