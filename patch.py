@@ -7,7 +7,7 @@ HEADER= '''<script defer data-domain="nondocumentation.garambrogne.net" src="htt
 '''
 
 CSS='''
-html {
+html, body {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: 500;
