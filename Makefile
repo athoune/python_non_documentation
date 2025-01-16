@@ -53,3 +53,6 @@ pull:
 
 publish:
 	rsync -avz --delete-after output/* $(DEST)
+
+serve:
+	python3 -m http.server -b localhost -d output/ 3003
