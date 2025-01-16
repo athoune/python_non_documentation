@@ -25,14 +25,20 @@ pdf: png svg
 	   -a pdf-theme=pied \
 	   -a pdf-themesdir=resources/themes \
 	   -a pdf-fontsdir=resources/fonts \
+	   -a scripts=cjk \
 	   --destination-dir /documents/output \
 	   --verbose \
 	   --doctype book \
 	   src/index.adoc
+	pdfcpu pagemode set output/index.pdf UseOutlines
+	pdfcpu properties add output/index.pdf 'Author = Mathieu Lecarme'
+	pdfcpu viewerpref set output/index.pdf '{"UseOutlines": true}'
+	pdfcpu optimize output/index.pdf
+	mv output/index.pdf output/python_non_documentation.pdf
 
 book: pdf
 	# https://github.com/pdfcpu/pdfcpu
-	pdfcpu booklet -- output/book.pdf 4 output/index.pdf
+	pdfcpu booklet -- output/book_python_non_documentation.pdf 4 output/python_non_documentation.pdf
 
 epub: png svg
 	docker run -it -u $(id -u):$(id -g) -v `pwd`:/documents/ asciidoctor/docker-asciidoctor asciidoctor-epub3 \
@@ -40,6 +46,7 @@ epub: png svg
 	   --verbose \
 	   --doctype book \
 	   src/index.adoc
+	mv output/index.epub output/python_non_documentation.epub
 
 pull:
 	docker pull asciidoctor/docker-asciidoctor
