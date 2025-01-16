@@ -5,6 +5,9 @@ html: png svg
 	   --verbose \
 	   --doctype book \
 	   src/index.adoc
+	./patch.py
+	rm output/index.html
+	mv output/index_patched.html output/index.html
 
 output/image:
 	mkdir -p output/image
