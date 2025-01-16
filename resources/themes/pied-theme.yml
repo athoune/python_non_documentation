@@ -1,5 +1,7 @@
 ---
-extends: default
+extends:
+  - default-with-font-fallbacks
+  - default-for-print
 hyphens: true
 page:
   format: A4
@@ -12,3 +14,27 @@ title-page:
   logo:
     align: center
     image: image:../../src/images/gros-pied.png[pdfwidth=50%]
+font:
+  catalog:
+    merge: true
+    OpenSans:
+      normal: opensans-normal.ttf
+      italic: opensans-italic.ttf
+      bold: opensans-bold.ttf
+      bold_italic: opensans-bold_italic.ttf
+    M+ 1mn:
+      normal: mplus1mn-regular-subset.ttf
+      bold: mplus1mn-bold-subset.ttf
+    M+ 1p Fallback: mplus1p-regular-fallback.ttf
+    Noto Emoji: GEM_FONTS_DIR/notoemoji-subset.ttf
+    Fira:
+      normal: firacode-normal.ttf
+      bold: firacode-bold.ttf
+  fallbacks:
+    - M+ 1p Fallback
+    - Noto Emoji
+base:
+  font-family: OpenSans
+code:
+  font:
+    family: Fira
