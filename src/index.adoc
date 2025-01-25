@@ -1,4 +1,4 @@
-= Une non-documentation pour Python
+= Python, la non-documentation
 :author: Mathieu Lecarme
 :doctype: book
 :creator: {author}
@@ -30,6 +30,15 @@ Ce fascicule devrait permettre aux personnes trop pressées, trop enthousiastes,
 Les pas suivants se feront en lisant de la vraie documentation, personne ne peut y couper.
 
 Dans chaque chapitre, la section *ハッキング Hakkingu* donne des astuces pour faire le malin et attiser la curiosité.
+
+=== Supports
+
+Cette non-documentation est disponible sur différentes supports :
+
+ * link:https://nondocumentation.garambrogne.net/[Web]
+ * link:https://nondocumentation.garambrogne.net/python_non_documentation.pdf[PDF]
+
+=== Licence
 
 [TIP]
 .Licence
