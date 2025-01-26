@@ -5,6 +5,7 @@ html: png svg
 	   --verbose \
 	   --doctype book \
 	   src/index.adoc
+	cp console_webworker.js output/
 	./patch.py
 	rm output/index.html
 	mv output/index_patched.html output/index.html

@@ -1,41 +1,17 @@
-#!/usr/bin/env python3
-
-HEADER= '''
-<script defer data-domain="nondocumentation.garambrogne.net" src="https://plausible.garambrogne.net/js/script.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/jquery"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/js/jquery.terminal.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/js/unix_formatting.min.js"></script>
-
-<link
-    href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/css/jquery.terminal.min.css"
-    rel="stylesheet"
-/>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-'''
-
-CSS='''
-html, body {
-  font-family: "Open Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-code {
-  font-family: "Fira Code", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/js/jquery.terminal.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/js/unix_formatting.min.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.35.2/css/jquery.terminal.min.css"
+            rel="stylesheet"
+        />
+        <style>
             .terminal {
-                --size: 1;
+                --size: 1.1;
                 --color: rgba(255, 255, 255, 0.8);
                 /*width: 640px;
                 height: 480px;
@@ -46,6 +22,11 @@ code {
             .noblink {
                 --animation: terminal-none;
             }
+
+            body {
+                background-color: grey;
+            }
+
             #console,
             #screen {
                 display: block;
@@ -118,9 +99,10 @@ code {
             button.term:hover {
                 background-color: darkgrey;
             }
-'''
+        </style>
+    </head>
 
-BODY = '''
+    <body>
         <div id="python-repl">
             <button class="term">>_</button>
             <div id="console">
@@ -128,9 +110,6 @@ BODY = '''
                 <div class="loader"></div>
             </div>
         </div>
-'''
-
-FOOTER = '''
         <script>
             "use strict";
 
@@ -262,8 +241,8 @@ FOOTER = '''
                     const unlock = await lock();
                     term.pause();
                     // multiline should be split (useful when pasting)
-                    for (const c of command.split("\\n")) {
-                        const escaped = c.replaceAll(/\\u00a0/g, " ");
+                    for (const c of command.split("\n")) {
+                        const escaped = c.replaceAll(/\u00a0/g, " ");
                         const fut = await do_push(escaped);
                         term.set_prompt(
                             fut.syntax_check === "incomplete" ? ps2 : ps1,
@@ -304,7 +283,7 @@ FOOTER = '''
                             const command = term.before_cursor();
                             // Disable completion for whitespaces.
                             if (command.trim() === "") {
-                                term.insert("\\t");
+                                term.insert("\t");
                                 return false;
                             }
                             return original(event);
@@ -365,25 +344,5 @@ FOOTER = '''
                 globalThis.mountDirectory = mountDirectory;
             }
         </script>
-'''
-
-def patch(src, target):
-    for line in src.readlines():
-        if line.strip()=='</style>':
-            target.write(CSS)
-            target.write(line)
-        elif line.strip().startswith("<head"):
-            target.write(line)
-            target.write(HEADER)
-        elif line.strip().startswith("<body"):
-            target.write(line)
-            target.write(BODY)
-        elif line.strip().startswith("</body"):
-            target.write(FOOTER)
-            target.write(line)
-        else:
-            target.write(line)
-
-
-if __name__ == "__main__":
-    patch(open('output/index.html', 'r'), open('output/index_patched.html','w'))
+    </body>
+</html>
