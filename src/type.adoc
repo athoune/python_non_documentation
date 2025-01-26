@@ -56,7 +56,7 @@ False
 True
 ```
 
-Les comparateurs permettent de créer un booléen comparant deux valeurs : une *clauses*.
+Les comparateurs permettent de créer un booléen comparant deux valeurs : une *clause*.
 
 ```
 >>> 1 == 2
