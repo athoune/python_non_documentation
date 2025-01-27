@@ -11,7 +11,7 @@ Il est utilisé dans le calcul scientifique, l'intelligence artificielle, le web
 L'interpréteur interactif permet de taper des commandes Python, une à une et d'afficher le résultat (et les erreurs quand on se trompe).
 Il est possible de remonter dans l'historique, pour reprendre une ligne précédante, sans avoir à tout retaper.
 
-L'interpréteur interactif de Python est disponible sur Internet sans avoir besoin d'installer quoi que ce soit : link:https://pyodide.org/en/stable/console.html[Pyodide interactif].
+L'interpréteur interactif de Python est disponible en ligne (mais pas sur les navigateurs sans clavier) sans avoir besoin d'installer quoi que ce soit : link:https://pyodide.org/en/stable/console.html[Pyodide interactif].
 
 === Interpréteur
 
