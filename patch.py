@@ -50,7 +50,7 @@ code {
             #screen {
                 display: block;
                 width: 480px;
-                height: 180px;
+                height: 240px;
             }
             #console {
                 /*display: none;*/
@@ -70,7 +70,7 @@ code {
 
             /* https://cssloaders.github.io/ */
             .loader {
-                margin-top: -100px;
+                margin-top: -130px;
                 margin-left: 220px;
                 width: 16px;
                 height: 16px;
@@ -327,7 +327,7 @@ FOOTER = '''
                         $(".loader").css("display", "none");
                     },
                 });
-                globalThis.term.resize(480, 180);
+                globalThis.term.resize(480, 240);
                 window.term = term;
                 term.ready = Promise.resolve();
 
