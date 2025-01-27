@@ -129,6 +129,11 @@ code {
             button.term:hover {
                 background-color: darkgrey;
             }
+    @media (hover: none) {
+        #python-repl {
+            display: none;
+        }
+    }
 '''
 
 BODY = '''
