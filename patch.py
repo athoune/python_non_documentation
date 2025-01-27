@@ -1,6 +1,30 @@
 #!/usr/bin/env python3
 
 HEADER= '''
+<meta name="geo.placename" content="Paris, France" />
+<meta property="og:site_name" content="Python, la non-documentation" />
+<meta name="og:locale" content="fr" />
+<meta property="og:type" content="website">
+<meta property="og:description" content="Apprendre Python quand est trop pressé et qu'on a pas le temps de lire la doc." />
+<meta
+    property="og:image"
+    content="https://nondocumentation.garambrogne.net/image/gros-pied-couleur.png"
+/>
+<meta
+    name="twitter:image"
+    content="https://nondocumentation.garambrogne.net/image/gros-pied-couleur.png"
+/>
+<meta name="twitter:image:width" content="1024" />
+<meta name="twitter:image:height" content="512"
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="nondocumentation.garambrogne.net">
+
+<meta
+    name="keywords"
+    content="python documentation débutant"
+/>
+
+
 <script defer data-domain="nondocumentation.garambrogne.net" src="https://plausible.garambrogne.net/js/script.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
@@ -392,7 +416,7 @@ def patch(src, target):
             target.write(CSS)
             target.write(line)
         elif line.strip().startswith("<head"):
-            target.write(line)
+            target.write('<head prefix="og: https://ogp.me/ns#">\n')
             target.write(HEADER)
         elif line.strip().startswith("<body"):
             target.write(line)
