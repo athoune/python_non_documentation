@@ -35,7 +35,7 @@ code {
 }
 
             .terminal {
-                --size: 1;
+                --size: 1.1;
                 --color: rgba(255, 255, 255, 0.8);
                 /*width: 640px;
                 height: 480px;
@@ -49,23 +49,29 @@ code {
             #console,
             #screen {
                 display: block;
-                width: 640px;
-                height: 120px;
+                width: 480px;
+                height: 180px;
             }
             #console {
-                display: none;
+                /*display: none;*/
                 background-color: black;
-                margin: 5px;
                 margin-left: 50px;
+                border: 4px solid lightgrey;
+                z-order: 99;
+                color: lightgrey;
             }
             #python-repl {
-                margin-top: 100px;
-                margin-left: 100px;
+                position: fixed;
+                bottom: 0;
+                right: -480px;
+                z-index: 100;
+                transition: right 1s;
             }
+
             /* https://cssloaders.github.io/ */
             .loader {
-                margin-top: -80px;
-                margin-left: 300px;
+                margin-top: -100px;
+                margin-left: 220px;
                 width: 16px;
                 height: 16px;
                 border-radius: 50%;
@@ -107,12 +113,15 @@ code {
                 float: left;
                 background-color: black;
                 border-radius: 10px 0 0 10px;
-                color: white;
-                width: 50px;
+                border: 4px solid lightgrey;
+                color: lightgrey;
+                width: 54px;
                 text-align: center;
                 font-size: 14px;
+                font-weight: bolder;
                 padding-bottom: 7px;
-                border: none;
+                border-right: none;
+                z-index: 100;
                 /*padding: 0px 10px 7px 10px;*/
             }
             button.term:hover {
@@ -138,18 +147,21 @@ FOOTER = '''
             var started = false;
             const button = $("button.term");
             const s = $("#console");
+            const repl = $("#python-repl");
             button.click(() => {
                 button.toggleClass("on");
                 if (toggle) {
                     button.html("X");
-                    s.css("display", "block");
+                    /*repl.css('animation', 'slide-left 1s linear');*/
+                    repl.css("right", "0");
                     if (!started) {
                         console.log("start");
                         window.console_ready = initWorker();
                     }
                 } else {
                     button.html(">_");
-                    s.css("display", "none");
+                    /*repl.css('animation', 'slide-right 0.5s linear');*/
+                    repl.css('right', '-480px');
                 }
                 toggle = !toggle;
             });
@@ -315,7 +327,7 @@ FOOTER = '''
                         $(".loader").css("display", "none");
                     },
                 });
-                globalThis.term.resize(640, 120);
+                globalThis.term.resize(480, 180);
                 window.term = term;
                 term.ready = Promise.resolve();
 
