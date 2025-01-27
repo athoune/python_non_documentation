@@ -68,7 +68,7 @@ code {
                 bottom: 0;
                 right: -480px;
                 z-index: 100;
-                transition: right 1s;
+                transition: right 750ms ease-out;
             }
 
             /* https://cssloaders.github.io/ */
@@ -108,8 +108,7 @@ code {
             }
 
             #screen {
-                padding: 5px;
-                font-weight: bolder;
+                padding: 2px;
                 transition: opacity 5s;
             }
             button.term {
