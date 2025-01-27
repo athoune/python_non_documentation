@@ -28,11 +28,12 @@ html, body {
 }
 
 code {
-  font-family: "Fira Code", serif;
+  font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
+
 
             .terminal {
                 --size: 1.1;
@@ -41,6 +42,8 @@ code {
                 height: 480px;
                 border: thin dotted red;*/
                 overflow: scroll;
+                font-family: "Fira Code", monospace;
+                font-weight: bolder;
             }
 
             .noblink {
