@@ -19,7 +19,7 @@ pip install requests
 .ハッキング Hakkingu
 --
 
-Les interpréteurs Python en ligne ne disposent pas de tous les modules et les installent de manières différentes.
+Les interpréteurs Python en ligne ne disposent pas de tout les modules et les installent de manières différentes.
 
 Utiliser `pip` en dehors d'un <<_environnement_virtuel,environnement virtuel>> est fortement déconseillé, les souffrances à court terme seront terribles.
 

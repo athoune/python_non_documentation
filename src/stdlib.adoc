@@ -2,4 +2,4 @@
 
 Python est "livré avec des piles", il inclut une link:https://docs.python.org/fr/3.13/library/index.html[bibliothèque standard] conséquente.
 
-Pas d'inquiétudes à voir sur la grande quantité de modules existants, une partie sont ésotériques, et il suffit de chercher par domaine (maths, textes, fichiers, réseaux, etc.) puis d'explorer les quelques modules du domaine.
+Pas d'inquiétudes à avoir sur la grande quantité de modules existants, une partie sont ésotériques, et il suffit de chercher par domaine (maths, textes, fichiers, réseaux, etc.) puis d'explorer les quelques modules du domaine.

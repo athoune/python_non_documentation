@@ -9,7 +9,7 @@ Il est utilisé dans le calcul scientifique, l'intelligence artificielle, le web
 === Interpréteur interactif
 
 L'interpréteur interactif permet de taper des commandes Python, une à une et d'afficher le résultat (et les erreurs quand on se trompe).
-Il est possible de remonter dans l'historique, pour reprendre une ligne précédante, sans avoir à tout retaper.
+Il est possible de remonter dans l'historique, pour reprendre une ligne précédente, sans avoir à tout retaper.
 
 L'interpréteur interactif de Python est disponible en ligne (mais pas sur les navigateurs sans clavier) sans avoir besoin d'installer quoi que ce soit : link:https://pyodide.org/en/stable/console.html[Pyodide interactif].
 
@@ -30,9 +30,9 @@ Python est un langage *interprété*, *faiblement typé*.
 
 Python a un link:https://docs.python.org/fr/3.13/tutorial/interpreter.html[tutorial officiel].
 
-La link:https://www.numworks.com/fr/simulateur/[calcualtrice Numworks fournit un simulateur en ligne]. L'interpréteur intéractif est nommé "Console d'exécution".
+La link:https://www.numworks.com/fr/simulateur/[calculatrice Numworks fournit un simulateur en ligne]. L'interpréteur interactif est nommé "Console d'exécution".
 
-La plupart des interpréteurs intéractifs fournissent de la complétion.
+La plupart des interpréteurs interactifs fournissent de la complétion.
 La touche `->|` propose de compléter le début de mot que l'on a tapé.
 
 Il existe des interpréteurs interactifs plus pratiques que celui par défaut, comme link:https://ipython.org/[iPython].
