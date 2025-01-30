@@ -33,6 +33,5 @@ Tous les éléments d'un module peuvent être importés d'un coup.
 .ハッキング Hakkingu
 --
 
-Il est possible de créer des modules et de les partager.
-
+Il est possible de link:https://packaging.python.org/en/latest/tutorials/packaging-projects/#a-simple-project[créer des modules et de les partager].
 --
