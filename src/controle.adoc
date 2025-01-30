@@ -78,7 +78,7 @@ image::for-while.svg[Static,100,100,float="right"]
 
 En plus de `if` et `else` il y a `elif` contraction de `else if`.
 
-`break` interromps une boucle `for`.
+`break` interrompt une boucle `for`.
 
 ```
 >>> for i in range(3000):

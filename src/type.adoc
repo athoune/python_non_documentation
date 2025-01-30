@@ -144,7 +144,7 @@ Dans une liste, les éléments sont accessibles par leur rang, dans un dictionna
 
 Les `str` utilisent UTF8, ce qui permet l'utilisation des smileys : `"J'adore 🐍"`.
 
-Les listes disposent d'une syntaxe plus souple pour favoriser la lisibilité : il est possible d'utiliser plusieurs lignes etd'avoir une virgule en trop à la fin de la liste (pour faciliter le copier/coller).
+Les listes disposent d'une syntaxe plus souple pour favoriser la lisibilité : il est possible d'utiliser plusieurs lignes et d'avoir une virgule en trop à la fin de la liste (pour faciliter le copier/coller).
 
 ```
 >>> [1,

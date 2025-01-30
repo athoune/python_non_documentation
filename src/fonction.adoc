@@ -1,6 +1,6 @@
 == Fonctions
 
-Une fonction regroupe un bloc de codes qui pourra être appelée dans une autre partie du code.
+Une fonction regroupe un bloc de code qui pourra être appelé dans une autre partie du code.
 
 Une fonction a une entrée (des `arguments`) et une sortie (le `return`).
 

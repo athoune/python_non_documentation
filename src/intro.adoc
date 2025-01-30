@@ -1,3 +1,3 @@
 == Intro
 
-Vous êtes jeune (au moins dans votre tête), pressé, et vous avait envie/besoin de coder en Python.
+Vous êtes jeune (au moins dans votre tête), pressé, et vous avez envie/besoin de coder en Python.
