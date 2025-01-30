@@ -40,6 +40,8 @@ Cette non-documentation est disponible sur différentes supports :
 
 === Licence
 
+Les sources de ce document link:https://github.com/athoune/python_non_documentation[athoune/python_non_documentation] sont sous licence Creative Common.
+
 [TIP]
 .Licence
 --
