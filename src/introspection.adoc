@@ -44,7 +44,6 @@ Dans un premier temps, il faut se concentrer sur les autres.
 <class 'int'>
 >>> type(5.0)
 <class 'float'>
->>>
 ```
 
 [TIP]

@@ -84,7 +84,7 @@ En plus de `if` et `else` il y a `elif` contraction de `else if`.
 >>> for i in range(3000):
 ...     print(i)
 ...     if i == 2:
-...             break
+...         break
 ...
 0
 1

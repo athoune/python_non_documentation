@@ -13,22 +13,22 @@ Python fournit des link:https://docs.python.org/fr/3.13/library/functions.html[f
 ```
 
 Python est un langage orienté objet, les valeurs sont des objets.
-Les objets ont des `function` que l'on appelle `method`.
+Les objets ont des fonctions que l'on appellent de méthodes.
 
 ```
->>> # upper: passage en majuscule d'une chaine de caractères.
+>>> # upper: passage en majuscule d'une chaîne de caractères.
 >>> "bob".upper()
 'BOB'
 ```
 
 === Écrire une fonction
 
-Le bloc définissant une fonction est indenté (chaque ligne commence par une tabulation).
+Le bloc définissant une fonction est indenté (chaque ligne commence par quatre espaces).
 
 [source,python]
 ----
-def hello(name):
-    return "Hello {}".format(name)
+def addition(a, b):
+    return a + b
 
-print(hello("World"))
+print(addition(5, 2))
 ----

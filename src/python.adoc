@@ -26,7 +26,7 @@ link:https://www.mycompiler.io/fr/new/python[MyCompiler] est l'un d'eux.
 .ハッキング Hakkingu
 --
 
-Python est un langage *interprété*, *faiblement typé*.
+Python est un langage *interprété*, a *typage dynamique*.
 
 Python a un link:https://docs.python.org/fr/3.13/tutorial/interpreter.html[tutorial officiel].
 
