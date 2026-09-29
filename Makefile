@@ -39,7 +39,7 @@ pdf: png svg
 
 book: pdf
 	# https://github.com/pdfcpu/pdfcpu
-	pdfcpu booklet --force -- output/book_python_non_documentation.pdf 4 output/python_non_documentation.pdf
+	pdfcpu booklet -- output/book_python_non_documentation-booklet.pdf 4 output/python_non_documentation.pdf
 
 epub: png svg
 	docker run -it -u $(id -u):$(id -g) -v `pwd`:/documents/ asciidoctor/docker-asciidoctor asciidoctor-epub3 \
