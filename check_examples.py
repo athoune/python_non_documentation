@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Check every code example printed in the book.
 
-Two kind of blocks are extracted from src/*.adoc :
+Three kinds of check, run against every src/*.adoc file:
 
-  * REPL transcripts (blocks containing ``>>>``) are run through doctest,
-    expected output must match the real interpreter, exactly like the
-    published transcripts.
-  * ``[source,python]`` blocks are just executed, to catch syntax rot.
+  * REPL transcripts (fenced blocks containing ``>>>``) are replayed
+    through doctest: a printed output must still be the interpreter's
+    output;
+  * ``[source,python]`` blocks are just executed, to catch syntax rot;
+  * a stray prompt (a bare ``>>>`` line) is reported: doctest swallows
+    such a line without any error.
 
 Usage:
     python3 check_examples.py    (or `make test`)
@@ -29,6 +31,8 @@ FENCE = re.compile(r"^```[^\n]*\n(.*?)^```[ \t]*$", re.DOTALL | re.MULTILINE)
 SOURCE = re.compile(
     r"^\[source,python\]\s*\n----\n(.*?)^----[ \t]*$", re.DOTALL | re.MULTILINE
 )
+# A REPL prompt with nothing after it: a typo, not an example.
+STRAY_PROMPT = re.compile(r">>>[ \t]*")
 
 
 class TranscriptChecker(doctest.OutputChecker):
@@ -71,16 +75,27 @@ def mark_blank_lines(block):
 
 
 def check_repl(runner, path, text):
-    """Feed every `>>>` block of `path` to the doctest runner."""
+    """Feed every `>>>` block of `path` to the doctest runner.
+
+    A stray prompt (a bare `>>>` line) is a typo in the book; doctest
+    swallows it without an error, so it is hunted line by line here.
+    """
     parser = doctest.DocTestParser()
+    issues = []
     for match in FENCE.finditer(text):
         block = match.group(1)
         if ">>>" not in block:
             continue
         block = mark_blank_lines(block)
-        name = f"{path.name}:{line_of(text, match.start())}"
-        test = parser.get_doctest(block, {}, name, str(path), line_of(text, match.start()))
-        runner.run(test)
+        line = line_of(text, match.start())
+        for offset, source_line in enumerate(block.split("\n")):
+            if STRAY_PROMPT.fullmatch(source_line):
+                issues.append(
+                    f"{path.name}:{line + 1 + offset}: stray `>>>` prompt"
+                )
+        name = f"{path.name}:{line}"
+        runner.run(parser.get_doctest(block, {}, name, str(path), line))
+    return issues
 
 
 def check_source_blocks(path, text):
@@ -112,23 +127,26 @@ def main():
         return 2
 
     runner = doctest.DocTestRunner(verbose=False, checker=TranscriptChecker())
-    source_failures = []
+    stray_prompts = []
+    source_issues = []
     source_blocks = 0
     for path in paths:
         text = path.read_text(encoding="utf-8")
-        check_repl(runner, path, text)
+        stray_prompts.extend(check_repl(runner, path, text))
         failures, checked = check_source_blocks(path, text)
-        source_failures.extend(failures)
+        source_issues.extend(failures)
         source_blocks += checked
 
-    for line in source_failures:
+    for line in stray_prompts + source_issues:
         print(f"FAIL {line}", file=sys.stderr)
 
     print(
         f"{runner.tries} transcript examples, {runner.failures} failed; "
-        f"{source_blocks} source blocks, {len(source_failures)} failed"
+        f"{source_blocks} source blocks, {len(source_issues)} failed; "
+        f"{len(stray_prompts)} stray prompts"
     )
-    return 1 if runner.failures or source_failures else 0
+    broken = runner.failures or source_issues or stray_prompts
+    return 1 if broken else 0
 
 
 if __name__ == "__main__":
