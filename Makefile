@@ -14,10 +14,10 @@ output/image:
 	mkdir -p output/image
 
 png: output/image
-	pngcrush -d output/image src/images/*.png
+	pngcrush -d output/image src/image/*.png
 
 svg: output/image
-	./node_modules/.bin/svgo -rf src/images -o output/image
+	./node_modules/.bin/svgo -rf src/image -o output/image
 
 all: html book epub
 

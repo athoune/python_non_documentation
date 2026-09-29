@@ -7,8 +7,7 @@
 :icons: font
 :toc: left
 :toclevels: 4
-:imagesoutdir: images
-:imagesdir: images
+:imagesoutdir: image
 :chapter-label: Chapitre
 :toc-title: Sommaire
 :pdf-page-size: A4
