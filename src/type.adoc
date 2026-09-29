@@ -91,7 +91,7 @@ Il est possible d'échapper un séparateur avec un `\`, si l'on utilise des `'` 
 ```
 >>> "J'aime les carottes"
 "J'aime les carottes"
->>> >>> 'J\'aime les carottes'
+>>> 'J\'aime les carottes'
 "J'aime les carottes"
 ```
 
