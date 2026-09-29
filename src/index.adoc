@@ -17,6 +17,9 @@
 #:front-cover-image: image:gros-pied.png[Front Cover,1200,1200]
 :favicon: ./image/pied.png
 :imagesdir: image
+ifdef::backend-epub3[]
+:front-cover-image: image:couverture.png[Front Cover,595,841]
+endif::[]
 
 == Préambule
 
@@ -37,6 +40,7 @@ Cette non-documentation est disponible sur différentes supports :
 
  * link:https://nondocumentation.garambrogne.net/[Web]
  * link:https://nondocumentation.garambrogne.net/python_non_documentation.pdf[PDF]
+ * link:https://nondocumentation.garambrogne.net/python_non_documentation.epub[EPUB]
 
 === Licence
 

@@ -46,6 +46,7 @@ epub: png svg
 	   --destination-dir /documents/output \
 	   --verbose \
 	   --doctype book \
+		-a ebook-validate \
 	   src/index.adoc
 	mv output/index.epub output/python_non_documentation.epub
 
