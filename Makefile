@@ -21,6 +21,10 @@ svg: output/image
 
 all: html book epub
 
+.PHONY: test
+test:
+	python3 check_examples.py
+
 pdf: png svg
 	docker run -it -u $(id -u):$(id -g) -v `pwd`:/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf \
 	   -a pdf-theme=pied \

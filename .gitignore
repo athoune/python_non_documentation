@@ -1,3 +1,4 @@
 output
 node_modules/
+__pycache__/
 session-*.md

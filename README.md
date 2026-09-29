@@ -28,6 +28,16 @@ Pour la version web et book, il faut disposer des outils suivant:
  * pdfcpu
  * pngcrush
 
+### Vérification des exemples
+
+Chaque exemple imprimé dans le livre est rejoué par la machine : les
+transcripts REPL (blocs contenant `>>>`) passent par `doctest`, les blocs
+`[source,python]` sont exécutés. Un transcript qui ne correspond plus à
+l'interpréteur fait échouer la commande.
+
+```bash
+make test
+```
 
 ## Licence
 
