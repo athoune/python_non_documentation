@@ -7,7 +7,7 @@ Par convention, l'indentation est de quatre espaces. Dans les éditeurs de texte
 
 === if : Si
 
-image::if.svg[Static,100,100,float="right"]
+image::if.svg[Static,150,150,float="right"]
 
 [source,python]
 ----
@@ -19,7 +19,7 @@ if a:
 
 === if/else : Si, sinon
 
-image::ifelse.svg[Static,100,100,float="right"]
+image::ifelse.svg[Static,150,150,float="right"]
 
 [source,python]
 ----
@@ -34,7 +34,7 @@ else:
 
 Une boucle for va utiliser un *itérateur*, qui pourra être une *collection*, ou plus simplement la fonction `range`.
 
-image::for-while.svg[Static,100,100,float="right"]
+image::for-while.svg[Static,150,150,float="right"]
 
 ```
 >>> for i in range(3):
@@ -61,7 +61,7 @@ c
 Parfois, on ne sait combien de fois on va boucler.
 On va donc itérer jusqu'à ce qu'une clause soit vraie.
 
-image::for-while.svg[Static,100,100,float="right"]
+image::for-while.svg[Static,150,150,float="right"]
 
 ```
 >>> a = 0
