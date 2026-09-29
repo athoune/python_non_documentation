@@ -6,14 +6,14 @@ hyphens: true
 page:
   format: A4
 title-page:
-  #background-image: ../images/gros-pied.png
+  #background-image: ../image/gros-pied.png
   title:
     font-color: "#000000"
     font-size: 30
     font-style: bold
   logo:
     align: center
-    image: image:../../src/images/gros-pied.png[pdfwidth=50%]
+    image: image:../../src/image/gros-pied.png[pdfwidth=50%]
 font:
   catalog:
     merge: true
