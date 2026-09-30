@@ -90,9 +90,7 @@ def check_repl(runner, path, text):
         line = line_of(text, match.start())
         for offset, source_line in enumerate(block.split("\n")):
             if STRAY_PROMPT.fullmatch(source_line):
-                issues.append(
-                    f"{path.name}:{line + 1 + offset}: stray `>>>` prompt"
-                )
+                issues.append(f"{path.name}:{line + 1 + offset}: stray `>>>` prompt")
         name = f"{path.name}:{line}"
         runner.run(parser.get_doctest(block, {}, name, str(path), line))
     return issues
